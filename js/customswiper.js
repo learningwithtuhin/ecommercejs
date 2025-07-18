@@ -27,6 +27,10 @@ const swiper = new Swiper('.mySwiper1', {
       el: '.swiper-pagination',
       clickable: true,
     },
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
     breakpoints: {
       576: {
         slidesPerView: 2,
@@ -48,6 +52,10 @@ const swiper = new Swiper('.mySwiper1', {
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
+    },
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
     },
     breakpoints: {
       576: {
