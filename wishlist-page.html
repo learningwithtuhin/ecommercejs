@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fabish Skincare</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- noUiSlider CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.css" rel="stylesheet" />
+
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <!-- swiper css -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  
+  <!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Poppins:wght@300;400;500;600;700&family=Rufina:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   <header class="header">
+  <div class="container d-flex justify-content-between align-items-center">
+    <div class="logo d-flex align-items-center">
+      <a href="index.html"><img src="images/logo 2.png" alt="Fabish Logo" height="40" /></a>
+    </div>
+
+    
+
+    <!-- Desktop Nav -->
+    <nav class="d-none d-md-block">
+      <ul class="nav">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="shop.html" class="nav-link">Products</a></li>
+        <li class="nav-item"><a href="terms.html" class="nav-link">Terms</a></li>
+        <li class="nav-item"><a href="privacy.html" class="nav-link">Privacy Policy</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Icons (visible on all screen sizes) -->
+    <div class="header-icons d-flex gap-3 align-items-center">
+      <ul class="d-flex gap-3 m-0">
+        <li class="position-relative user-hover-dropdown" id="userDropdownWrapper">
+          <a href="#" id="userDropdownToggle"><i class="bi bi-person"></i></a>
+          <ul class="user-dropdown-menu position-absolute end-0 p-2 bg-white border shadow-sm" id="userDropdownMenu">
+            <!-- Populated by JS -->
+          </ul>
+        </li>
+
+        <li class="hdr-cart-wrap">
+          <a href="cart.html"><i class="bi bi-bag"></i></a>
+          <span id="cartCountBadge">0</span>
+        </li>
+
+        <li class="hdr-wish-wrap">
+          <a href="wishlist-page.html" class="wishlist-icon-link">
+            <i class="bi bi-heart"></i>
+          </a>
+          <span id="wishlistCountBadge">0</span>
+        </li>
+      </ul>
+    </div>
+    <!-- Hamburger Icon for Mobile -->
+    <div class="d-block d-md-none" id="hamburgerMenu">
+      <i class="bi bi-list" style="font-size: 28px; cursor: pointer;"></i>
+    </div>
+
+  </div>
+</header>
+
+<!-- Mobile Sliding Nav -->
+<div id="mobileMenu" class="mobile-slide-menu">
+  <div class="mobile-menu-header d-flex justify-content-between align-items-center px-3 py-2 border-bottom">
+    <span class="fw-bold">Menu</span>
+    <i class="bi bi-x-lg" id="closeMobileMenu" style="cursor: pointer;"></i>
+  </div>
+  <ul class="nav flex-column p-3">
+    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+    <li class="nav-item"><a href="shop.html" class="nav-link">Products</a></li>
+    <li class="nav-item"><a href="terms.html" class="nav-link">Terms</a></li>
+    <li class="nav-item"><a href="privacy.html" class="nav-link">Privacy Policy</a></li>
+    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+  </ul>
+</div>
+
+
+  <!-- minibanner sec start -->
+
+  <section class="minibanner">
+    <div class="container">
+      <div class="row">
+        <div class="hero-text col-md-5">
+            <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.html" class="text-dark">Home</a></li>
+    <li class="breadcrumb-item active " aria-current="page">wishlist</li>
+  </ol>
+</nav>
+          <h2>My  <span>Wishlist</span></h2>
+         
+        </div>
+      </div>
+     
+     
+    </div>
+   
+  </section>
+
+    <!-- minibanner sec end -->
+
+
+    <section class="wishlist-sec">
+      <div class="container">
+       <h4 id="wishlistCountText">0 items</h4>
+        <div class="row" id="wishlistContainer">
+          <!-- <div class="col-md-3">
+            <div class="wishlist-card">
+    <button class="remove-btn">&times;</button>
+    <a href="#">
+      <div class="wishlist-img">
+      <img src="images/main1.png" alt="Product Name">
+    </div>
+    <div class="wishlist-info">
+      <h5 class="wishlist-name">Night Serum</h5>
+      <div class="stars"><img src="images/star.png" alt="stars"></div>
+      <div class="wishlist-pricing">
+        <span class="price">$40</span>
+       
+      </div>
+      <button class="move-to-bag">Move to Bag</button>
+    </div>
+    </a>
+    
+          </div>
+        </div> -->
+      </div>
+      </div>
+    </section>
+
+
+
+   
+
+
+                    <!-- footer start -->
+                     <footer class="footer-outer">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-6 col-lg-3 col-sm-6">
+                            <div class="footer-left">
+                              <div class="footer-logo">
+                                <a href="index.html"> <img src="images/logo 2.png"></a>
+                             
+                            </div>
+                            <p>Discover naturally effective skincare, crafted to nourish and protect your skin. </p>
+
+                            <ul class="social-link">
+                              <li><a href="#"><img src="images/fb.png"></a></li>
+                              <li><a href="#"><img src="images/insta.png"></a></li>
+                              <li><a href="#"><img src="images/twitter.png"></a></li>
+                            </ul>
+                            </div>
+                            
+                          </div>
+                          <div class="col-md-6 col-lg-3 col-sm-6">
+                            <div class="footer-block">
+                              <div class="footer-head">
+                              <h5>Quick Links</h5>
+                              <ul class="footer-point">
+                                <li><a href="shop.html">Products</a></li>
+                                
+                                <li><a href="terms.html">Terms & Conditions</a></li>
+                                <li><a href="privacy.html">Privacy Policy</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                              
+                              </ul>
+                            </div>
+                            
+                            </div>
+                          </div>
+                          <div class="col-md-6 col-lg-3 col-sm-6">
+                            <div class="footer-block">
+                              <div class="footer-head">
+                              <h5>Contact Info</h5>
+                              <ul class="footer-point">
+                                <li><a href="#"><span class="point-icon"><img src="images/call.png" alt=""></span><span class="list-dtls">(1800) 574 9687</span></a></li>
+                                <li><a href="#"><span class="point-icon"> <img src="images/home.png" alt=""></span><span class="list-dtls">256, Stella Orr'e, New York 24</span></a></li>
+                                <li><a href="#"><span class="point-icon"><img src="images/envelope.png" alt=""></span><span class="list-dtls">info@fabish.com</span></a></li>
+                                
+                                
+                              
+                              </ul>
+                            </div>
+                            
+                            </div>
+                          </div>
+                         <div class="col-md-6 col-lg-3 col-sm-6">
+                            <div class="footer-block">
+                              <div class="footer-head">
+                              <h5>Newsletter</h5>
+                              <div class="email-box">
+    <input type="email" placeholder="Enter your email address">
+    <a href="#"><img src="images/fly.png" alt="Send Icon"></a>
+  </div>
+                             
+                            </div>
+                            
+                            </div>
+                          </div>
+                          <div class="bottom-footer col-md-12">
+                          <div class="container">
+                              <div class="row">
+                              <div class="col-md-6 col-sm-6">
+                                <p>Copyright © 2025 Fabish, All rights reserved.</p>
+                              </div>
+                              <div class="col-md-6 ps-0 col-sm-6">
+                                <div class="text-end footer-card">
+                                  <span>Secure Payments With:</span> <span class="ftr-card"><img src="images/footer-card.png"></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </footer>
+                      <!-- footer end -->
+
+<!-- Toast Container -->
+<div id="toastContainer" class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 1055;">
+</div>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script src="js/shoppageslider.js"></script>
+<!-- swiper js -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+ <script src="js/customswiper.js"></script>
+ <script defer src="js/allproducts.js"></script>
+<script defer src="js/productdetails.js"></script>
+<script defer src="js/wishlist.js"></script>
+</body>
+</html>
