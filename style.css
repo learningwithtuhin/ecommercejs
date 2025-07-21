@@ -141,10 +141,10 @@ font-size: 15px;
 }
 .large-category-img img{
   width: 100%;
-  height: 375px;
+  height:auto;
 }
 .left-item .large-category-img img{
-   height: 774px;
+   height: auto;
 }
 .large-category .btn{
   position: absolute;
@@ -171,6 +171,11 @@ font-weight: 700;
     margin-bottom: 10px;
     text-transform: uppercase;
     color: #000;
+    text-align: center;
+}
+.categry-img img{
+  border-radius: 20px;
+  width: 100%;
 }
 h6{
    font-size: 15px;
@@ -181,13 +186,14 @@ h6{
     color: #1E1E1E;
 }
 .mid-prod-content {
-height: 375px;
-    background: #fafafa;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 20px;
+position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.categry-wrap{
+  border-radius: 20px;
+    position: relative;
+    margin-bottom: 24px;
 }
 /* category-sec end */
 

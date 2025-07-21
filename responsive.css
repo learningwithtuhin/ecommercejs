@@ -73,7 +73,7 @@
 /* category */
 .mid-prod-content{
     padding: 0 20px;
-    height: 311px;
+    /* height: 311px; */
 }
 .category-content h3 {
     font-size: 30px;
@@ -210,10 +210,7 @@
     font-size: 24px;
     line-height: 35px;
 }
-.mid-prod-content {
 
-        height: 227px;
-    }
         .category-content h3 {
         font-size: 25px;
         line-height: 33px;
@@ -344,9 +341,7 @@
 .leaf_img img{
     width: 100px;
 }
-    .mid-prod-content {
-        height: 250px;
-    }
+    
     .girl-img img{
       display: none;
     }
@@ -442,8 +437,13 @@
     font-size: 30px;
 }
     .mid-prod-content {
-        height: auto;
-        background: transparent;
+        width: 100%;
+    }
+    .categry-wrap{
+        margin-bottom: 55px;
+    }
+    .categry-img img{
+        display: none;
     }
         .category-content h3 {
         font-size: 30px;
